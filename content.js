@@ -11,9 +11,8 @@ function redirectShorts() {
     }
 }
 
-// Remove Shorts elements from the page
+
 function removeShortsElements() {
-    // Remove Shorts shelves and reels
     const selectors = [
         'ytd-rich-shelf-renderer[is-shorts]',
         'ytd-reel-shelf-renderer',
@@ -35,11 +34,9 @@ function removeShortsElements() {
             const elements = document.querySelectorAll(selector);
             elements.forEach(el => el.remove());
         } catch (e) {
-            // Ignore selector errors for older browsers
         }
     });
     
-    // Remove Shorts links from sidebar - multiple approaches
     const shortsLinks = document.querySelectorAll('a[href*="/shorts"], a[title="Shorts"], a[href="/shorts"]');
     shortsLinks.forEach(link => {
         const sidebarItem = link.closest('ytd-guide-entry-renderer') || 
@@ -76,7 +73,6 @@ function debounce(func, wait) {
 // Debounced version of removeShortsElements
 const debouncedRemove = debounce(removeShortsElements, 100);
 
-// Observer to handle YouTube's dynamic content loading
 let observer;
 
 function initObserver() {
@@ -97,7 +93,7 @@ function initObserver() {
     }
 }
 
-// Handle navigation changes (YouTube is a SPA)
+// Handle navigation changes (YouTube is a piece of cra-)
 let lastUrl = location.href;
 new MutationObserver(() => {
     const currentUrl = location.href;
@@ -121,5 +117,5 @@ if (document.readyState === 'loading') {
     initObserver();
 }
 
-// Catch early redirects
+
 redirectShorts();
