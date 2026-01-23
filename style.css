@@ -1,0 +1,60 @@
+/* Hide Shorts Shelves and Reels */
+ytd-rich-shelf-renderer[is-shorts], 
+ytd-reel-shelf-renderer,
+ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts]) {
+    display: none !important;
+}
+
+/* Hide Sidebar Shorts Button (Expanded Menu) */
+ytd-guide-entry-renderer:has(a[href*="/shorts"]),
+ytd-guide-entry-renderer:has([title="Shorts"]),
+ytd-guide-entry-renderer:has(yt-formatted-string:contains("Shorts")) {
+    display: none !important;
+}
+
+/* Hide Sidebar Shorts Button (Mini/Collapsed Menu) */
+ytd-mini-guide-entry-renderer:has(a[href*="/shorts"]),
+ytd-mini-guide-entry-renderer:has([title="Shorts"]) {
+    display: none !important;
+}
+
+/* Additional Shorts sidebar selectors */
+a[href="/shorts"],
+a[title="Shorts"],
+ytd-guide-entry-renderer[aria-label="Shorts"],
+#guide-content a[href*="youtube.com/shorts"] {
+    display: none !important;
+}
+
+/* Hide Mobile/Tablet Bottom Bar Shorts Button */
+ytm-pivot-bar-item-renderer:has(div.pivot-shorts) {
+    display: none !important;
+}
+
+/* Hide Shorts in Search Results and Home Feed */
+ytd-video-renderer:has(a[href*="/shorts/"]) {
+    display: none !important;
+}
+
+ytd-grid-video-renderer:has(a[href*="/shorts/"]) {
+    display: none !important;
+}
+
+ytd-compact-video-renderer:has(a[href*="/shorts/"]) {
+    display: none !important;
+}
+
+/* Hide Shorts Tab on Channel Pages */
+yt-tab-shape:has(a[href*="/shorts"]) {
+    display: none !important;
+}
+
+tp-yt-paper-tab:has(a[href*="/shorts"]) {
+    display: none !important;
+}
+
+/* Hide Shorts Badge/Label */
+span.ytd-thumbnail-overlay-time-status-renderer[aria-label*="Shorts"],
+span.ytd-thumbnail-overlay-time-status-renderer[aria-label*="Short"] {
+    display: none !important;
+}
