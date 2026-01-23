@@ -4,10 +4,10 @@ A Chrome extension that removes YouTube Shorts from your browsing experience and
 
 ## Features
 
-- 🚫 Automatically redirects Shorts URLs to the regular video player
-- 🧹 Removes Shorts from homepage, sidebar, search results, and channel pages
-- ⚡ Works seamlessly with YouTube's dynamic content loading
-- 🎯 Blocks Shorts shelves, tabs, and recommendations
+-  Automatically redirects Shorts URLs to the regular video player, because you aint slick.
+-  Removes Shorts from homepage, sidebar, search results, and channel pages, why else would u download this?
+-  Works good enough with youtube being an absolute shi-.
+-  Blocks Shorts shelves, tabs, and recommendations
 
 ## Installation
 
@@ -45,3 +45,4 @@ If Shorts are still appearing:
 ## License
 
 Free to use and modify.
+just don't do stupid stuff.
