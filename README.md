@@ -44,5 +44,4 @@ If Shorts are still appearing:
 
 ## License
 
-Free to use and modify.
-just don't do stupid stuff.
+MIT
